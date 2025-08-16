@@ -1,0 +1,5 @@
+#contenedor {
+  padding: 5px;               /* espacio interno */
+  background-color: rgb(69, 240, 69);    /* fondo verde */
+  display: inline-block; /* hace que solo ocupe el espacio del botón saludar, con el padding que le agregué */
+}

@@ -1,7 +1,13 @@
-// Seleccionamos el div por su id
-const miDiv = document.getElementById("contenedor");
+const div = document.getElementById("contenedor");
+const boton = document.getElementById("miBoton");
 
-// Agregamos un manejador de evento para el click
-miDiv.addEventListener("click", function() {
-    alert("Hola! Soy el div");
+// Evento en el div
+div.addEventListener("click", function() {
+    alert("¡Hola! Soy el div.");
+});
+
+// Evento en el botón para que evite que dispare el evento del div
+boton.addEventListener("click", function(event) {
+  event.stopPropagation(); // detiene la propagación
+  alert("¡Hola!.");
 });
